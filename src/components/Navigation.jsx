@@ -30,6 +30,15 @@ function Navigation(props) {
                   About
                 </Link>
               </li>
+              <li
+                class={`nav-item  ${
+                  props.location.pathname === "/profile" ? "active" : ""
+                }`}
+              >
+                <Link class="nav-link" to="/profile">
+                  Profile
+                </Link>
+              </li>
               <li>
                 <form class="form-inline">
                   <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
