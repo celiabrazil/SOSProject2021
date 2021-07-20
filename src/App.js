@@ -2,7 +2,7 @@
 import './App.css';
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { Navigation, Footer, Home, About} from "./components";
+import { Navigation, Footer, Home, About, Profile } from "./components";
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
         <Switch>
           <Route path="/" exact component={() => <Home />} />
           <Route path="/about" exact component={() => <About />} />
+          <Route path="/profile" exact component={() => <Profile />} />
         </Switch>
         <Footer />
       </Router>
