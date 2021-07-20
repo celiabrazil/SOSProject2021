@@ -1,7 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
 import styled from "styled-components";
 
-const Style = styled.div``;
+const Style = styled.div`
+  text-align: center;
+`;
 
 class BatteryPercent extends React.Component {
   state = {
