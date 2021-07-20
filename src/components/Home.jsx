@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import BatteryPercent from "./BatteryPercent";
 import {
   Box,
   Grid,
@@ -91,7 +92,6 @@ const Boxes = (props) => (
 
 function Home() {
   return (
-    
     <Grommet plain>
       {/* <Header background="brand">
         <Menu label="account" items={[{ label: "logout" }]} />
@@ -148,15 +148,9 @@ function Home() {
           width="large"
         />
 
-        <Box
-          gridArea="three"
-          onClick={() => window.alert("I am working, yeah.")}
-          height="medium"
-          width="900px"
-          background="url('city.jpeg')"
-          height="medium"
-          width="large"
-        />
+        <Box>
+          <BatteryPercent />
+        </Box>
 
         <Box
           gridArea="four"
