@@ -1,16 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import {
   Box,
   Grid,
-  Image,
   Avatar,
   Grommet,
   Button,
-  TextArea,
-  Paragraph,
   Text,
-  Menu,
 } from "grommet";
 
 
@@ -22,18 +17,17 @@ const theme = {
       brand: "#228BE6",
     },
     font: {
-      family: "Roboto",
+      family: "Georgia",
       size: "18px",
       height: "20px",
     },
   },
 };
-<Grommet theme={theme}></Grommet>;
 
 function Profile() {
     const [value, setValue] = React.useState('');
   return (
-    <Grommet plain>
+    <Grommet theme={theme}>
         
         <Grid
             rows={['xxsmall', 'small', 'xsmall']}
@@ -64,10 +58,10 @@ function Profile() {
                 >
                     <Box direction="row"  gap="small" align="center" >
                        <Box>
-                       <Text margin="medium"  size="xxlarge" >
+                       <Text margin="medium"  size="xxlarge" alignSelf="center" align="center">
                             Dale Earnhardt
                         </Text>  
-                        <Text margin="1px"  size="medium" >
+                        <Text margin="1px"  size="medium" alignSelf="center" align="center">
                             daleearnhardt@gmail.com
                         </Text> 
                        </Box>
@@ -100,14 +94,29 @@ function Profile() {
             gap="large"
             >
             <Box background="000000" height="medium">
-                <Text size="large">Current Listings</Text>
-                <Box background="#98A0A6" height="small">
+                <Text size="large" alignSelf="center" align="center">Current Listings</Text>
+                <Box background="#98A0A6" height="small" round="small" >
                     <Text>  </Text>
                 </Box>
                 <Box background="000000" height="xsmall">
                     <Text>  </Text>
                 </Box>
-                <Box background="#98A0A6" height="small">
+                <Box background="#98A0A6" height="small" round="small">
+                    <Text>  </Text>
+                </Box>
+                <Box background="000000" height="xsmall" round="small">
+                    <Text>  </Text>
+                </Box>
+            </Box>
+            <Box background="000000" height="medium">
+                <Text size="large" alignSelf="center" align="center">Past Sales</Text>
+                <Box background="#98A0A6" height="small" round="small">
+                    <Text>  </Text>
+                </Box>
+                <Box background="000000" height="xsmall">
+                    <Text>  </Text>
+                </Box>
+                <Box background="#98A0A6" height="small" round="small">
                     <Text>  </Text>
                 </Box>
                 <Box background="000000" height="xsmall">
@@ -115,29 +124,14 @@ function Profile() {
                 </Box>
             </Box>
             <Box background="000000" height="medium">
-                <Text size="large">Past Sales</Text>
-                <Box background="#98A0A6" height="small">
+                <Text size="large" alignSelf="center" align="center">Past Purchases</Text>
+                <Box background="#98A0A6" height="small" round="small">
                     <Text>  </Text>
                 </Box>
                 <Box background="000000" height="xsmall">
                     <Text>  </Text>
                 </Box>
-                <Box background="#98A0A6" height="small">
-                    <Text>  </Text>
-                </Box>
-                <Box background="000000" height="xsmall">
-                    <Text>  </Text>
-                </Box>
-            </Box>
-            <Box background="000000" height="medium">
-                <Text size="large">Past Purchases</Text>
-                <Box background="#98A0A6" height="small">
-                    <Text>  </Text>
-                </Box>
-                <Box background="000000" height="xsmall">
-                    <Text>  </Text>
-                </Box>
-                <Box background="#98A0A6" height="small">
+                <Box background="#98A0A6" height="small" round="small">
                     <Text>  </Text>
                 </Box>
                 <Box background="000000" height="xsmall">
@@ -154,31 +148,4 @@ function Profile() {
 
 export default Profile;
 
-/* 
- <FileInput
-            name="file"
-            onChange={event => {
-            const fileList = event.target.files;
-                for (let i = 0; i < fileList.length; i += 1) {
-                    const file = fileList[i];
-                }
-            }}
-        />
-        
-        <DateInput
-            format="mm/dd/yyyy"
-            value={(new Date()).toISOString()}
-            onChange={({ value }) => {}}
-        />
 
-        function Example() {
-            const [value, setValue] = React.useState('');
-            return (
-                <TextInput
-                    placeholder="type here"
-                    value={value}
-                    onChange={event => setValue(event.target.value)}
-                />
-            );
-        }
-*/
