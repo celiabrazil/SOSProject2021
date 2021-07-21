@@ -31,11 +31,19 @@ function Navigation(props) {
                 </Link>
               </li>
               <li
+<<<<<<< HEAD
                 className={`nav-item  ${
                   props.location.pathname === "/profile" ? "active" : ""
                 }`}
               >
                 <Link className="nav-link" to="/profile">
+=======
+                class={`nav-item  ${
+                  props.location.pathname === "/login" ? "active" : ""
+                }`}
+              >
+                <Link class="nav-link" to="/login">
+>>>>>>> de9fbaf0242300960af5bc07da67d964f866304c
                   Profile
                 </Link>
               </li>
