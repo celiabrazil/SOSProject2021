@@ -1,4 +1,5 @@
 import React from "react";
+import BatteryPercent from "./BatteryPercent";
 // import { Link } from "react-router-dom";
 import {
   Box,
@@ -87,9 +88,7 @@ const theme = {
 
 function Home() {
   return (
-    
     <Grommet plain>
-
       <Box height="medium" width="full" overflow="hidden">
         <Carousel play="4000">
           <Image
@@ -141,15 +140,13 @@ function Home() {
           width="large"
         />
 
-        <Box
-          gridArea="three"
-          onClick={() => window.alert("I am working, yeah.")}
-          // height="medium"
-          // width="900px"
-          background="url('city.jpeg')"
-          height="medium"
-          width="large"
-        />
+        <Box>
+          <BatteryPercent
+            minimum="20"
+            maximum="70"
+            car="General Electric Vehicles Battery usuage"
+          />
+        </Box>
 
         <Box
           gridArea="four"
