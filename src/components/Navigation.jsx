@@ -39,6 +39,15 @@ function Navigation(props) {
                   Profile
                 </Link>
               </li>
+              <li
+                className={`nav-item  ${
+                  props.location.pathname === "/regulations" ? "active" : ""
+                }`}
+              >
+                <Link className="nav-link" to="/regulations">
+                  Regulations
+                </Link>
+              </li>
               <li>
                 <form className="form-inline">
                   <input
