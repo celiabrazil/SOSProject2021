@@ -2,7 +2,7 @@
 import './App.css';
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { Navigation, Footer, Home, About, LogIn, Profile } from "./components";
+import { Navigation, Footer, Home, About, LogIn, Profile, NissanLeaf } from "./components";
 
 function App() {
   return (
@@ -15,6 +15,7 @@ function App() {
           <Route path="/about" exact component={() => <About />} />
           <Route path="/login" exact component={() => <LogIn />} />
           <Route path="/profile" exact component={() => <Profile />} />
+          <Route path="/nissanleaf" exact component={() => <NissanLeaf />} />
         </Switch>
         <Footer />
       </Router>

@@ -31,61 +31,6 @@ const theme = {
 };
 <Grommet theme={theme}></Grommet>;
 
-// const pointerEventsFriendlyTheme = {
-//   box: {
-//     extend: "pointer-events: none;",
-//   },
-//   anchor: {
-//     extend: "pointer-events: auto;",
-//   },
-//   button: {
-//     extend: "pointer-events: auto;",
-//   },
-// };
-
-// const AppBar = (props) => (
-//   <Box
-//     tag="header"
-//     direction="row"
-//     align="center"
-//     justify="between"
-//     background="brand"
-//     pad={{ left: "medium", right: "small", vertical: "small" }}
-//     elevation="medium"
-//     style={{ zIndex: "1" }}
-//     {...props}
-//   />
-// );
-
-// const Boxes = (props) => (
-//   <Grid
-//     rows={["250px", "full"]}
-//     columns={["medium", "full"]}
-//     gap="medium"
-//     areas={[
-//       { name: "slider", start: [0, 0], end: [1, 0] },
-//       { name: "one", start: [0, 1], end: [0, 1] },
-//       { name: "two", start: [1, 1], end: [1, 1] },
-//     ]}
-//   >
-//     <Box gridArea="slider" background="brand" height="200px" width="full" />
-
-//     <Box
-//       gridArea="one"
-//       background="url('city.jpeg')"
-//       height="400px"
-//       width="400px"
-//     />
-
-//     <Box
-//       gridArea="two"
-//       background="url('smoke.jpeg')"
-//       height="400px"
-//       width="400px"
-//     />
-//   </Grid>
-// );
-
 function Home() {
   return (
     <Grommet plain>
