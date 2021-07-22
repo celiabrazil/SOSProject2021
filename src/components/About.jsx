@@ -1,7 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-const Style = styled.div``;
+const Style = styled.div`
+  text-align: center;
+`;
 
 function About() {
   return (

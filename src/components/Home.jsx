@@ -86,7 +86,11 @@ function Home() {
         />
 
         <Box>
-          <BatteryPercent />
+          <BatteryPercent
+            minimum="20"
+            maximum="70"
+            car="General Electric Vehicles Battery usuage"
+          />
         </Box>
 
         <Box

@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
+//Pass in maximum and minimum criteria for battery usage and the car model
+
 const Style = styled.div`
   text-align: center;
 `;
@@ -13,7 +15,10 @@ class BatteryPercent extends React.Component {
 
   handleOnChange = (e) => {
     let text = "";
-    if (e.target.value <= 70 && e.target.value > 20) {
+    if (
+      e.target.value <= this.props.maximum &&
+      e.target.value > this.props.minimum
+    ) {
       text =
         "The battery can be repurposed into solar battery or for street lights. Look up for a company looking for used batteries through our website";
     } else if (e.target.value < 20) {
@@ -28,7 +33,7 @@ class BatteryPercent extends React.Component {
   render() {
     return (
       <Style>
-        <h1 className="Heading">Tesla Model X Usable Battery percent</h1>
+        <h1>{this.props.car}</h1>
         <br></br>
         <input
           type="range"
