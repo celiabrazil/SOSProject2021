@@ -6,3 +6,5 @@ export { default as LogIn } from "./LogIn";
 export { default as Profile } from "./Profile";
 export { default as Maps } from "./Maps";
 export { default as Regulations } from "./Regulations";
+export { default as NissanLeaf } from "./NissanLeaf"
+
