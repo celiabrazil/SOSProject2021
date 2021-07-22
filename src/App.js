@@ -10,6 +10,7 @@ import {
   Profile,
   Regulations,
   Maps,
+  NissanLeaf,
 } from "./components";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
             <Route path="/login" exact component={() => <LogIn />} />
             <Route path="/profile" exact component={() => <Profile />} />
             <Route path="/maps" exact component={() => <Maps />} />
+            <Route path="/nissanleaf" exact component={() => <NissanLeaf />} />
             <Route
               path="/Regulations"
               exact
