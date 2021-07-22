@@ -9,6 +9,7 @@ import {
   LogIn,
   Profile,
   Regulations,
+  Maps,
 } from "./components";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
             <Route path="/about" exact component={() => <About />} />
             <Route path="/login" exact component={() => <LogIn />} />
             <Route path="/profile" exact component={() => <Profile />} />
+            <Route path="/maps" exact component={() => <Maps />} />
             <Route
               path="/Regulations"
               exact
