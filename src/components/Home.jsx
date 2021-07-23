@@ -54,7 +54,7 @@ function Home(props) {
 
       <Grid
         rows={["1/2", "1/2"]}
-        columns={["1/2", "1./2"]}
+        columns={["1/2", "1/2"]}
         gap="xxsmall"
         areas={[
           { name: "one", start: [0, 0], end: [0, 0] },
@@ -81,8 +81,17 @@ function Home(props) {
         </a>
 
         <Box //Put battery percentage - messes up all of the sizing
+          alignSelf="center"
+          alignContent="center"
+          pad="xxsmall"
+          wrap="true"
+
         >
-            
+          <BatteryPercent
+            minimum="20"
+            maximum="70"
+            car="Vehicles Battery Usuage"
+          />
         </Box>
 
         <a href="https://www.nbcnews.com/business/autos/mercedes-benz-go-all-electric-2030-n1274708">

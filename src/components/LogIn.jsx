@@ -30,6 +30,7 @@ const theme = {
 
 function LogIn() {
     const [value, setValue] = React.useState('');
+ 
     const [checked, setChecked] = React.useState(true);
   return (
     <Grommet theme={theme}>
@@ -56,11 +57,11 @@ function LogIn() {
                         value={value}
                         onChange={event => setValue(event.target.value)} // username variable
                     />
-                    <TextInput //Username Input
+                    <TextInput //Password Input
                         placeholder="Password"
                         size="large"
                         value={value}
-                        onChange={event => setValue(event.target.value)} // username variable
+                        onChange={event => setValue(event.target.value)} // password variable
                     />
                 </Box>
            

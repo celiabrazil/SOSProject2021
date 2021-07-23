@@ -5,12 +5,13 @@ import styled from "styled-components";
 
 const Style = styled.div`
   text-align: center;
+  white-space: pre-line;
 `;
 
 class BatteryPercent extends React.Component {
   state = {
     value: 100,
-    text: "Scroll to see what you can do with you Battery usage %",
+    text: "Scroll to see what you can\n do with you Battery usage %",
   };
 
   handleOnChange = (e) => {
@@ -20,10 +21,10 @@ class BatteryPercent extends React.Component {
       e.target.value > this.props.minimum
     ) {
       text =
-        "The battery can be repurposed into solar battery or for street lights. Look up for a company looking for used batteries through our website";
+        "The battery can be repurposed into solar\n battery or for street lights. Look up\n for a company looking for used batteries\n through our website";
     } else if (e.target.value < 20) {
       text =
-        "Cannot be used anymore. Contact nearest dealership to dispose the battery";
+        "Cannot be used anymore.\n Contact nearest dealership to dispose\n the battery";
     } else {
       text = "Still usable for you car";
     }

@@ -29,11 +29,11 @@ const theme = {
 function NissanLeaf() {
   return (
     <Grommet theme={theme}>
-        <Box height="xsmall" background="#98A0A6">
+        <Box height="xsmall" background="#F8F8F8">
             Header
         </Box>
             
-        <Box background="#98A0A6" >
+        <Box background="#F8F8F8" >
             <Grid //upper half 
             > 
                 <Grid
@@ -42,7 +42,7 @@ function NissanLeaf() {
                 >
                     <Box //Photots
                     marigin="large"
-                    background="#98A0A6"
+                    background="#F8F8F8"
                     >
                         <Carousel //Put the images in the public folder (it works best with JPEG files), then copy this format:
                             
@@ -70,7 +70,7 @@ function NissanLeaf() {
                             gap="small"
                         >
                             <Box //Name of Vehicle
-                            background="#98A0A6"
+                            background="#F8F8F8"
                             >
                                 <Heading
                                     size="xxlarge"
@@ -78,13 +78,13 @@ function NissanLeaf() {
                                 >Nissan Leaf</Heading>    
                             </Box>   
                             <Box //Stars - add the image
-                            background="#98A0A6"
+                            background="#F8F8F8"
                             >
                                 <Text>Stars</Text>    
                             </Box>    
                         </Grid>
 
-                        <Box background="#98A0A6" height="xsmall" //Spacer
+                        <Box background="#F8F8F8" height="xsmall" //Spacer
                         >
                             <Text>  </Text>
                         </Box>
@@ -96,7 +96,7 @@ function NissanLeaf() {
                             }}
                             gap="small"
                         >
-                            <Box background="#98A0A6" >
+                            <Box background="#F8F8F8" >
                                 <Button //24
                                     primary label="24 kWh" 
                                     alignSelf="center"
@@ -109,7 +109,7 @@ function NissanLeaf() {
                                 >$5500</Text>  
                             </Box>
             
-                            <Box background="#98A0A6" >
+                            <Box background="#F8F8F8" >
                                 <Button //40
                                     primary label="40 kWh" 
                                     alignSelf="center"
@@ -122,7 +122,7 @@ function NissanLeaf() {
                                 >$6500-$7500</Text>  
                             </Box>
                         
-                            <Box background="#98A0A6">
+                            <Box background="#F8F8F8">
                                 <Button //62
                                     primary label="62 kWh" 
                                     alignSelf="center"
@@ -138,14 +138,14 @@ function NissanLeaf() {
                             
                         </Grid>
                             <Box //environmental scale
-                            background="#98A0A6" >
+                            background="#F8F8F8" >
                                 <Text>Environmetal Scale Box</Text>
                             </Box>
                     </Box>  
                 </Grid>  
             </Grid>
 
-            <Box background="#98A0A6" height="xsmall" >
+            <Box background="#F8F8F8" height="xsmall" >
                 <Text>  </Text>
             </Box>
 
@@ -157,8 +157,7 @@ function NissanLeaf() {
             gap="small">
                 
                 <Box //add the information for each battery here! 
-                    background="#98A0A6"
-                    pad="medium">
+                    background="#F8F8F8">
                     <Heading alignSelf="center">24 kWh</Heading>
                     <Box margin="xxsmall"><Text alignSelf="center" >Lithium-ion Battery</Text></Box>
                     <Box margin="xxsmall"><Text alignSelf="center" >Horsepower: 110 HP</Text></Box>
@@ -166,7 +165,7 @@ function NissanLeaf() {
                     <Box margin="xxsmall"><Text alignSelf="center" >Peak Power: 80 kW</Text></Box>
                     <Box margin="xxsmall"><Text alignSelf="center" >Time until Full Charge: 3.5 hours</Text></Box>
                 </Box>
-                <Box background="#98A0A6">
+                <Box background="#F8F8F8">
                     <Heading alignSelf="center" >40 kWh</Heading>
                     <Box margin="xxsmall"><Text alignSelf="center" >Lithium-ion Battery</Text></Box>
                     <Box margin="xxsmall"><Text alignSelf="center" >Horsepower: 147 HP</Text></Box>
@@ -174,7 +173,7 @@ function NissanLeaf() {
                     <Box margin="xxsmall"><Text alignSelf="center" >Peak Power: 110 kW</Text></Box>
                     <Box margin="xxsmall"><Text alignSelf="center" >Time until Full Charge: 8 hours</Text></Box>
                 </Box>
-                <Box background="#98A0A6">
+                <Box background="#F8F8F8">
                     <Heading alignSelf="center" >62 kWh</Heading>
                     <Box margin="xxsmall"><Text alignSelf="center" >Lithium-ion Battery</Text></Box>
                     <Box margin="xxsmall"><Text alignSelf="center" >Horsepower: 214 HP</Text></Box>
@@ -186,7 +185,7 @@ function NissanLeaf() {
             </Grid>
         </Box>
 
-        <Box background="#98A0A6" height="xsmall" >
+        <Box background="#F8F8F8" height="xsmall" >
             <Text>  </Text>
         </Box>
 

@@ -28,6 +28,9 @@ function Profile() {
     const [value, setValue] = React.useState('');
   return (
     <Grommet theme={theme}>
+        <Box background="000000" height="10px">
+            <Text>  </Text>
+        </Box>
         
         <Grid
             rows={['xxsmall', 'small', 'xsmall']}
@@ -44,7 +47,7 @@ function Profile() {
             </Box>
 
             <Box background="000000" gridArea="sidebar" align="center">
-                <Avatar src="//s.gravatar.com/avatar/b7fb138d53ba0f573212ccce38a7c43b?s=80" size="300px" >  
+                <Avatar src={"./troy.jpg"} size="300px" >  
                 </Avatar>
             </Box>
 
@@ -59,10 +62,10 @@ function Profile() {
                     <Box direction="row"  gap="small" align="center" >
                        <Box>
                        <Text margin="medium"  size="xxlarge" alignSelf="center" align="center">
-                            Dale Earnhardt
+                            Troy Wiegand
                         </Text>  
                         <Text margin="1px"  size="medium" alignSelf="center" align="center">
-                            daleearnhardt@gmail.com
+                            troywiegand@gmail.com
                         </Text> 
                        </Box>
 
@@ -71,6 +74,7 @@ function Profile() {
                     <Box background="000000" align="center" >
                         <Button 
                             primary label="New Sale" 
+                            href="./newsale"
                             size="large"
                             margin="medium"
                             color="#98A0A6"

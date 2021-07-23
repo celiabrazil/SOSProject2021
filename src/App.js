@@ -11,6 +11,7 @@ import {
   Regulations,
   Maps,
   NissanLeaf,
+  NewSale
 } from "./components";
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
             <Route path="/profile" exact component={() => <Profile />} />
             <Route path="/maps" exact component={() => <Maps />} />
             <Route path="/nissanleaf" exact component={() => <NissanLeaf />} />
+            <Route path="/newsale" exact component={() => <NewSale />} />
             <Route
               path="/Regulations"
               exact
