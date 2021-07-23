@@ -33,11 +33,7 @@ function LogIn() {
  
     const [checked, setChecked] = React.useState(true);
   return (
-    <Grommet theme={theme}>
-        <Box background="brand" height="xxsmall">
-            Header
-        </Box>
-        
+    <Grommet theme={theme}>  
         <Grid //main grid
             columns={{
                 count: 2,

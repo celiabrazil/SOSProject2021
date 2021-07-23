@@ -27,8 +27,6 @@ const theme = {
 };
 
 function NissanLeaf() {
-  const Image1 = "./2020_nissan_leaf_angularfront.jpeg";
-  const Image2 = "./nissanleafbattery.jpeg";
   return (
     <Grommet theme={theme}>
       <BatteryInfo
@@ -42,10 +40,11 @@ function NissanLeaf() {
         battery3="62 kWh"
         battery3cost="$8500-$9500"
         scaleValue="777"
+
       />
-      <Box>
+      <Box background="#F8F8F8">
         <Box
-          border={{ color: "brand", size: "small" }}
+          //border={{ color: "brand", size: "small" }}
           background="#F8F8F8"
           height="xsmall"
         >
@@ -58,74 +57,74 @@ function NissanLeaf() {
             size: "auto",
           }}
           gap="small"
+          
         >
           <Box
-            border={{ color: "brand", size: "small" }} //add the information for each battery here!
+           //add the information for each battery here!
             background="#F8F8F8"
           >
             <Heading alignSelf="center">24 kWh</Heading>
-            <Box border={{ color: "brand", size: "small" }} margin="xxsmall">
+            <Box margin="xxsmall">
               <Text alignSelf="center">Lithium-ion Battery</Text>
             </Box>
-            <Box border={{ color: "brand", size: "small" }} margin="xxsmall">
+            <Box  margin="xxsmall">
               <Text alignSelf="center">Horsepower: 110 HP</Text>
             </Box>
-            <Box border={{ color: "brand", size: "small" }} margin="xxsmall">
+            <Box  margin="xxsmall">
               <Text alignSelf="center">
                 Miles on a Single Charge (EPA Range): 124 miles
               </Text>
             </Box>
-            <Box border={{ color: "brand", size: "small" }} margin="xxsmall">
+            <Box  margin="xxsmall">
               <Text alignSelf="center">Peak Power: 80 kW</Text>
             </Box>
-            <Box border={{ color: "brand", size: "small" }} margin="xxsmall">
+            <Box  margin="xxsmall">
               <Text alignSelf="center">Time until Full Charge: 3.5 hours</Text>
             </Box>
           </Box>
-          <Box border={{ color: "brand", size: "small" }} background="#F8F8F8">
+          <Box  background="#F8F8F8">
             <Heading alignSelf="center">40 kWh</Heading>
-            <Box border={{ color: "brand", size: "small" }} margin="xxsmall">
+            <Box  margin="xxsmall">
               <Text alignSelf="center">Lithium-ion Battery</Text>
             </Box>
-            <Box border={{ color: "brand", size: "small" }} margin="xxsmall">
+            <Box margin="xxsmall">
               <Text alignSelf="center">Horsepower: 147 HP</Text>
             </Box>
-            <Box border={{ color: "brand", size: "small" }} margin="xxsmall">
+            <Box margin="xxsmall">
               <Text alignSelf="center">
                 Miles on a Single Charge (EPA Range): 149 miles
               </Text>
             </Box>
-            <Box border={{ color: "brand", size: "small" }} margin="xxsmall">
+            <Box margin="xxsmall">
               <Text alignSelf="center">Peak Power: 110 kW</Text>
             </Box>
-            <Box border={{ color: "brand", size: "small" }} margin="xxsmall">
+            <Box margin="xxsmall">
               <Text alignSelf="center">Time until Full Charge: 8 hours</Text>
             </Box>
           </Box>
-          <Box border={{ color: "brand", size: "small" }} background="#F8F8F8">
+          <Box background="#F8F8F8">
             <Heading alignSelf="center">62 kWh</Heading>
-            <Box border={{ color: "brand", size: "small" }} margin="xxsmall">
+            <Box margin="xxsmall">
               <Text alignSelf="center">Lithium-ion Battery</Text>
             </Box>
-            <Box border={{ color: "brand", size: "small" }} margin="xxsmall">
+            <Box margin="xxsmall">
               <Text alignSelf="center">Horsepower: 214 HP</Text>
             </Box>
-            <Box border={{ color: "brand", size: "small" }} margin="xxsmall">
+            <Box margin="xxsmall">
               <Text alignSelf="center">
                 Miles on a Single Charge (EPA Range): 226 miles
               </Text>
             </Box>
-            <Box border={{ color: "brand", size: "small" }} margin="xxsmall">
+            <Box margin="xxsmall">
               <Text alignSelf="center">Peak Power: 160 kW</Text>
             </Box>
-            <Box border={{ color: "brand", size: "small" }} margin="xxsmall">
+            <Box margin="xxsmall">
               <Text alignSelf="center">Time until Full Charge: 11.5 hours</Text>
             </Box>
           </Box>
         </Grid>
       </Box>
       <Box
-        border={{ color: "brand", size: "small" }}
         background="#F8F8F8"
         height="xsmall"
       >
