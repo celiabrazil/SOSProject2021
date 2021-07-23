@@ -7,6 +7,8 @@ const PageStyle = styled.div`
   text-align: center;
   margin-top: 10%;
   margin-bottom: 10%;
+  const Style = styled.div
+  font-family: 'Arvo';
 `;
 const countryInformation = [
   {

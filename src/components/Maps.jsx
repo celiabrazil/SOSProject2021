@@ -1,6 +1,8 @@
 import React from "react";
 import MapSection from './mapComponents/Map';
 
+
+
 const location = {
   address: 'Indianapolis, Indiana',
   lat: 39.7775,

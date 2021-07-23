@@ -19,7 +19,7 @@ const theme = {
       brand: "#228BE6",
     },
     font: {
-      family: "Georgia",
+      family: "Arvo",
       size: "18px",
       height: "20px",
     },

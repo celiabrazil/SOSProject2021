@@ -18,7 +18,7 @@ const theme = {
       brand: "#228BE6",
     },
     font: {
-      family: "Roboto",
+      family: "Arvo",
       size: "18px",
       height: "20px",
     },
@@ -30,11 +30,6 @@ function NewSale() {
   const [value, setValue] = React.useState('');
   return (
     <Grommet plain>
-        <Box background="brand" height="xsmall" background="000000">
-            Header
-        </Box>
-
-
         <Grid //top half
             columns={{
                 count: 3,
@@ -140,7 +135,7 @@ function NewSale() {
                     alignSelf="center"
                     size="xxlarge"
                     margin="small"
-                    color="#6B9155"/>
+                    color="#006400"/>
             </Box>
 
         </Grid>
