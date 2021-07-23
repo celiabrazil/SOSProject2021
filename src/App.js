@@ -17,10 +17,10 @@ import {
 function App() {
   return (
     <div className="App">
-      <div className="App">
+      <div className="App" style={{'padding-bottom': '60px'}}>
         <Router>
           <Navigation />
-          <Switch>
+          <Switch >
             <Route path="/" exact component={() => <Home />} />
             <Route path="/about" exact component={() => <About />} />
             <Route path="/login" exact component={() => <LogIn />} />
@@ -34,9 +34,9 @@ function App() {
               component={() => <Regulations />}
             />
           </Switch>
-          <Footer />
         </Router>
       </div>
+      <Footer />
     </div>
   );
 }
