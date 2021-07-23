@@ -11,16 +11,16 @@ import {
   Regulations,
   Maps,
   NissanLeaf,
-  NewSale
+  NewSale,
 } from "./components";
 
 function App() {
   return (
     <div className="App">
-      <div className="App" style={{'padding-bottom': '60px'}}>
+      <div className="App">
         <Router>
           <Navigation />
-          <Switch >
+          <Switch>
             <Route path="/" exact component={() => <Home />} />
             <Route path="/about" exact component={() => <About />} />
             <Route path="/login" exact component={() => <LogIn />} />
