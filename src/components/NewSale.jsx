@@ -37,7 +37,7 @@ function NewSale() {
             }}
             gap="large"
         >
-            <Box>
+            <Box pad="medium">
                 <FileInput //Upload Images
                     multiple
                     onChange={(event, { files }) => {
@@ -52,6 +52,7 @@ function NewSale() {
 
             <Box
                 width="large"
+                pad="medium"
             >
                 <Grid
                     columns={{
@@ -134,7 +135,7 @@ function NewSale() {
                     //href="./review"
                     alignSelf="center"
                     size="xxlarge"
-                    margin="small"
+                    margin="medium"
                     color="#006400"/>
             </Box>
 
