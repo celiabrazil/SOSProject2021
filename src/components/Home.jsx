@@ -17,7 +17,7 @@ const theme = {
       brand: "#228BE6",
     },
     font: {
-      family: "Roboto",
+      family: "Arvo",
       size: "18px",
       height: "20px",
     },
@@ -80,7 +80,8 @@ function Home(props) {
           />
         </a>
 
-        <Box //Put battery percentage - messes up all of the sizing
+        <Box //Battery Percentage
+          background="#F8F8F8"
           alignSelf="center"
           alignContent="center"
           pad="xxsmall"

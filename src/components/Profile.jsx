@@ -17,7 +17,7 @@ const theme = {
       brand: "#228BE6",
     },
     font: {
-      family: "Georgia",
+      family: "Arvo",
       size: "18px",
       height: "20px",
     },
@@ -28,10 +28,6 @@ function Profile() {
     const [value, setValue] = React.useState('');
   return (
     <Grommet theme={theme}>
-        <Box background="000000" height="10px">
-            <Text>  </Text>
-        </Box>
-        
         <Grid
             rows={['xxsmall', 'small', 'xsmall']}
             columns={['1/4', '3/4']}
@@ -42,9 +38,7 @@ function Profile() {
             ]}
             gap="small"
             >
-            <Box background="brand" gridArea="header">
-                Header
-            </Box>
+
 
             <Box background="000000" gridArea="sidebar" align="center">
                 <Avatar src={"./troy.jpg"} size="300px" >  

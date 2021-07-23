@@ -1,11 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 
+
 //Pass in maximum and minimum criteria for battery usage and the car model
 
 const Style = styled.div`
   text-align: center;
   white-space: pre-line;
+  font-family: 'Arvo';
 `;
 
 class BatteryPercent extends React.Component {
