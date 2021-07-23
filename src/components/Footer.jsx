@@ -19,17 +19,17 @@ function Footer() {
               <Anchor
                 target="_blank"
                 href="https://www.figma.com/file/Ou4Mrw128p0QQTx8agtkOg/Prototype01?node-id=0%3A1"
-                icon={<Figma color="white" size="large" />}
+                icon={<Figma color="white" size="medium" />}
               />
               <Anchor
                 target="_blank"
                 href="https://github.com/celiabrazil/SOSProject2021"
-                icon={<Github color="white" size="large" />}
+                icon={<Github color="white" size="medium" />}
               />
               <Anchor
                 target="_blank"
                 href="https://devpost.com/"
-                icon={<Document color="white" size="large" />}
+                icon={<Document color="white" size="medium" />}
               />
             </Box>
             <br />
