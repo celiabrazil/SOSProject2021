@@ -11,7 +11,7 @@ import {
   Regulations,
   Maps,
   NissanLeaf,
-  NewSale
+  NewSale,
 } from "./components";
 
 function App() {
@@ -34,9 +34,9 @@ function App() {
               component={() => <Regulations />}
             />
           </Switch>
-          <Footer />
         </Router>
       </div>
+      <Footer />
     </div>
   );
 }

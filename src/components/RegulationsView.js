@@ -11,7 +11,7 @@ class RegulationsView extends React.Component {
             <div className="field">
               <span className="Recycle">Recycling: </span>
               <span className="link">
-                <a href={information.recycle} target="_blank">
+                <a href={information.recycle} target="_blank" rel="noreferrer">
                   <b>Click to search the nearest recycling center</b>
                 </a>
               </span>
@@ -31,7 +31,11 @@ class RegulationsView extends React.Component {
             <div className="field content">
               <span className="Transport">Transporting: </span>
               <span className="link">
-                <a href={information.recycle} target="_blank">
+                <a
+                  href={information.transport}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <b>
                     Click to view the regulation regarding transporting EV
                     batteries

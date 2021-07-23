@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Menu, Select } from "grommet";
+import { Select } from "grommet";
 import RegulationsView from "./RegulationsView";
 
 const PageStyle = styled.div`
@@ -41,7 +41,7 @@ class Regulations extends React.Component {
 
   handleOnClick(e) {
     console.log("Clicked" + e);
-    countryInformation.map((i) => {
+    countryInformation.foreach((i) => {
       if (i.country === e) {
         console.log(i);
         this.setState(i);
