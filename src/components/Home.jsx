@@ -7,6 +7,7 @@ import {
   Image,
   Carousel,
   Grommet,
+  Anchor,
 } from "grommet";
 
 import "../App.css";
@@ -32,12 +33,17 @@ function Home(props) {
 
   return (
     <Grommet plain>
+              <Anchor href="#"> 
+
       <Box height="medium" width="full" >
         <Carousel play="4000" fill>
-          <Image
+        <Box>        
+        <Image
             fit="cover"
             src={"./teslamodel3.jpg"}
-          />
+            href={"google.com"}
+          /></Box>
+
           <Image
             fit="cover"
             src={"./chargingvehicles.jpg"}
@@ -49,7 +55,7 @@ function Home(props) {
         </Carousel>
       </Box>
 
-
+      </Anchor>
 
 
       <Grid
