@@ -41,7 +41,7 @@ class Regulations extends React.Component {
 
   handleOnClick(e) {
     console.log("Clicked" + e);
-    countryInformation.foreach((i) => {
+    countryInformation.map((i) => {
       if (i.country === e) {
         console.log(i);
         this.setState(i);
