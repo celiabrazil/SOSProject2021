@@ -1,18 +1,12 @@
-import React from "react";
+import React, { useCallback } from "react";
 import BatteryPercent from "./BatteryPercent";
-// import { Link } from "react-router-dom";
+import { useHistory, Link, withRouter } from 'react-router-dom';
 import {
   Box,
   Grid,
   Image,
   Carousel,
   Grommet,
-  // Header,
-  // Button,
-  // Menu,
-  // Footer,
-  // Text,
-  // Anchor,
 } from "grommet";
 
 import "../App.css";
@@ -31,32 +25,36 @@ const theme = {
 };
 <Grommet theme={theme}></Grommet>;
 
-function Home() {
+function Home(props) {
+  const history = useHistory();
+  const handleOnClickOne = useCallback(() => history.push('/NissanLeaf'), [history]);
+  const handleOnClickTwo = useCallback(() => history.push('/NissanLeaf'), [history]);
+
   return (
     <Grommet plain>
-      <Box height="medium" width="full" overflow="hidden">
-        <Carousel play="4000">
+      <Box height="medium" width="full" >
+        <Carousel play="4000" fill>
           <Image
             fit="cover"
-            src={"./bnwi8.jpeg"}
-            onClick={() => window.alert("I am working, yeah.")}
+            src={"./teslamodel3.jpg"}
           />
           <Image
             fit="cover"
-            src={"./evonly.jpeg"}
-            onClick={() => window.alert("I am working, yeah.")}
+            src={"./chargingvehicles.jpg"}
           />
           <Image
             fit="cover"
-            src={"./chargingvehicles.jpeg"}
-            onClick={() => window.alert("I am working, yeah.")}
+            src={"./audia6etron.jpg"}
           />
         </Carousel>
       </Box>
 
+
+
+
       <Grid
-        rows={["medium", "medium"]}
-        columns={["large", "900px"]}
+        rows={["1/2", "1/2"]}
+        columns={["1/2", "1./2"]}
         gap="xxsmall"
         areas={[
           { name: "one", start: [0, 0], end: [0, 0] },
@@ -67,44 +65,47 @@ function Home() {
       >
         <Box
           gridArea="one"
-          onClick={() => window.alert("I am working, yeah.")}
-          // height="medium"
-          // width="900px"
-          background="url('teslachargingstation.jpeg')"
+          background="url('nissanleaf.jpg')"
+          onClick={handleOnClickOne}
           height="medium"
-          width="large"
+          
         />
-
-        <Box
-          gridArea="two"
-          onClick={() => window.alert("I am working, yeah.")}
-          // height="medium"
-          // width="900px"
-          background="url('trafficintersecion.jpeg')"
-          height="medium"
-          width="large"
-        />
-
-        <Box>
-          <BatteryPercent
-            minimum="20"
-            maximum="70"
-            car="General Electric Vehicles Battery usuage"
+        <a href="https://greencarjournal.com/features/behold-the-top-green-models-for-2021/">
+          <Box
+            gridArea="two"
+            height="medium"
+            width="full"
+            background="url('evonly.jpg')"
+  
           />
+        </a>
+
+        <Box //Put battery percentage - messes up all of the sizing
+        >
+            
         </Box>
 
-        <Box
-          gridArea="four"
-          onClick={() => window.alert("I am working, yeah.")}
-          // height="medium"
-          // width="900px"
-          background="url('smoke.jpeg')"
-          height="medium"
-          width="large"
-        />
+        <a href="https://www.nbcnews.com/business/autos/mercedes-benz-go-all-electric-2030-n1274708">
+          <Box width="400px"
+            gridArea="four"
+            height="medium"
+            width="full"
+            background="url('mercedesbenz.jpg')"
+
+          />
+        </a>
+
       </Grid>
     </Grommet>
   );
 }
 
 export default Home;
+
+/*
+          <BatteryPercent
+            minimum="20"
+            maximum="70"
+            car="General Electric Vehicles Battery usuage"
+          />
+*/
