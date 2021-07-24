@@ -33,7 +33,7 @@ function Home(props) {
 
   return (
     <Grommet plain>
-              <Anchor href="#"> 
+      <Anchor href="#"> 
 
       <Box height="medium" width="full" >
         <Carousel play="4000" fill>
@@ -47,6 +47,7 @@ function Home(props) {
           <Image
             fit="cover"
             src={"./chargingvehicles.jpg"}
+            href={"https://www.caranddriver.com/features/g15378765/worth-the-watt-a-brief-history-of-the-electric-car-1830-to-present/"}
           />
           <Image
             fit="cover"
