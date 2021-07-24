@@ -28,7 +28,7 @@ function Footer() {
               />
               <Anchor
                 target="_blank"
-                href="https://devpost.com/"
+                href="https://devpost.com/software/believe-3jayr2"
                 icon={<Document color="white" size="medium" />}
               />
             </Box>

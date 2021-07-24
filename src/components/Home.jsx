@@ -1,6 +1,6 @@
 import React, { useCallback } from "react";
 import BatteryPercent from "./BatteryPercent";
-import { useHistory, Link, withRouter } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import {
   Box,
   Grid,
@@ -29,7 +29,7 @@ const theme = {
 function Home(props) {
   const history = useHistory();
   const handleOnClickOne = useCallback(() => history.push('/NissanLeaf'), [history]);
-  const handleOnClickTwo = useCallback(() => history.push('/NissanLeaf'), [history]);
+  //const handleOnClickTwo = useCallback(() => history.push('/NissanLeaf'), [history]);
 
   return (
     <Grommet plain>
@@ -103,7 +103,7 @@ function Home(props) {
         </Box>
 
         <a href="https://www.nbcnews.com/business/autos/mercedes-benz-go-all-electric-2030-n1274708">
-          <Box width="400px"
+          <Box 
             gridArea="four"
             height="medium"
             width="full"

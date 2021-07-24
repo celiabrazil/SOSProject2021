@@ -3,10 +3,7 @@ import {
   Box,
   Grid,
   Grommet,
-  Button,
   Text,
-  Carousel,
-  Image,
   Heading,
 } from "grommet";
 
