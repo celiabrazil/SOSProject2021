@@ -1,7 +1,7 @@
 import React from 'react';
 import GoogleMapReact from 'google-map-react';
 import './map.css';
-import {Icon,InlineIcon} from '@iconify/react';
+import {Icon} from '@iconify/react';
 import outlinePlace from '@iconify-icons/ic/outline-place';
 let locations = [
     {

@@ -25,7 +25,7 @@ const theme = {
 };
 
 function Profile() {
-    const [value, setValue] = React.useState('');
+    //const [value, setValue] = React.useState('');
   return (
     <Grommet theme={theme}>
         <Grid
