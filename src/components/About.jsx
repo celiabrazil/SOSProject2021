@@ -8,23 +8,23 @@ const Style = styled.div`
 function About() {
   return (
     <Style>
-      <div className="about">
-        <img
-          className="img-fluid rounded mb-4 mb-lg-0"
-          src="http://placehold.it/900x400"
-          alt=""
-        />
-
+      <div className="about m-5 p-5">
         {
           //Logo Here
         }
         <br />
         <br />
         <h1>About us</h1>
+        <br />
         <p>
           <h5>Misson Statement</h5>
-          Statement
+          Our goal is to provide a means for connecting EV car owners with Car
+          Dealership/companies looking into repurposing the batteries and
+          providing the customers with information about EV batteries. We have a
+          environmental index rating to have the provide customers with the
+          environmental friendliness of the batteries.
         </p>
+        <img src="/CompanyLogo.png" alt="Company Logo" />
       </div>
     </Style>
   );
